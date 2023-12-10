@@ -1,0 +1,159 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d6a345e0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d6a345;
+}
+/* global styling */
+body {
+  overflow-x: hidden;
+  position: relative;
+  direction: ltr;
+  background-color: #fff;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+.container {
+  padding: 0px;
+}
+
+input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+input,
+select {
+  margin-bottom: 15px !important;
+  padding: 10px 15px !important;
+}
+input[type="checkbox"] {
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  vertical-align: middle;
+  accent-color: #f4a71d;
+  height: 20px;
+  width: 20px;
+}
+textarea {
+  overflow: auto !important;
+}
+form {
+  .star::after {
+    content: "*";
+  }
+}
+.card {
+  border: 0px !important;
+}
+.font-bold {
+  font-weight: bold;
+}
+.form-select:focus {
+  box-shadow: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+h4 {
+  font-size: 1.125rem !important;
+}
+.row {
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden;
+}
+.container {
+  overflow-x: hidden;
+}
+.color-main {
+  color: #f4a71d;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+ul {
+  list-style-type: none;
+}
+.invalid-feedback {
+  margin-top: 0px !important;
+  font-size: 13px;
+  color: #c47600bb !important;
+}
+.color-white {
+  color: white;
+}
+.overflow-hidden {
+  overflow-y: hidden !important;
+}
+
+.carousel {
+  padding: 0px;
+  margin: 0px;
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: -50px;
+    right: 40%;
+    left: auto;
+    background: #10defd;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    height: 34px;
+    margin-bottom: 15px;
+    text-shadow: none;
+    -webkit-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+    width: 34px;
+    svg path {
+      color: #10defd;
+    }
+  }
+  .carousel__next--disabled,
+  .carousel__prev--disabled {
+    opacity: 1;
+  }
+  .carousel__prev {
+    right: 44%;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .carousel {
+    padding-top: 55px;
+    .carousel__prev,
+    .carousel__next {
+      top: -15px !important;
+      right: auto !important;
+      left: 0px !important;
+    }
+    .carousel__next {
+      left: 15% !important;
+    }
+  }
+}

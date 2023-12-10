@@ -1,0 +1,374 @@
+@import "../../../assets/scss/_variables.scss";
+
+/* auth-form */
+
+.auth-form {
+  /* main-box */
+  .row {
+    overflow: hidden;
+  }
+  .main-box {
+    height: 100vh;
+    max-width: 100%;
+    background: var(--white-color);
+    padding: 100px 40px 50px 60px;
+    border-radius: var(--main-border-radius);
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      outline: 1px solid transparent;
+    }
+    .auth_header {
+      h3,
+      p {
+        margin: 0;
+      }
+      h3 {
+        font-weight: 700;
+        margin: {
+          bottom: 10px;
+        }
+      }
+      p {
+        color: var(--second-text-color);
+        padding: 0px;
+      }
+    }
+
+    /* simple-input */
+    .simple-input {
+      margin-bottom: 25px !important;
+      label {
+        margin-bottom: 0;
+      }
+      text-align: initial;
+      input,
+      select {
+        height: 60px !important;
+        text-align: left;
+        background: #f9f9f9;
+        width: 100%;
+        margin-bottom: 0px !important;
+      }
+    }
+    /* simple-button.send button */
+    .simple-button.send button {
+      width: 100%;
+      height: 64px !important;
+      margin-top: 5px;
+      border-radius: 8px;
+      min-width: auto;
+      position: relative;
+      z-index: 0;
+      &:disabled {
+        background: #dbdbdb;
+        color: black;
+      }
+    }
+    /* passwordField */
+    .passwordField {
+      position: relative;
+      z-index: 1;
+      /* pass_icon */
+      .pass_icon {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .domin_group {
+      .input-group-text {
+        background-color: rgba(
+          $color: var(--orange-text-color),
+          $alpha: 0.1
+        ) !important;
+        text-transform: lowercase;
+        border: 1px solid #dcddeb;
+        padding: 0 5px;
+        // border-top-left-radius: 8px !important;
+        // border-bottom-left-radius: 8px !important;
+        border-radius: 8px !important;
+        margin: 0 5px;
+        // order: 3;
+      }
+    }
+    /* ContinueWith */
+    .ContinueWith {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 20px 0px;
+      margin-right: 50px;
+      .card {
+        position: relative;
+        display: flex;
+        padding: 10px 10px;
+        justify-content: space-around;
+        background: #e5ecf3 !important;
+        cursor: pointer;
+        margin: 0px 10px;
+        width: max-content;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        margin: 0px 10px;
+        color: #2f3b48;
+        p {
+          margin: 0px 5px;
+        }
+        img {
+          width: 29px;
+          height: 29px;
+        }
+        &:first-child {
+          background: (229, 236, 243, 1);
+        }
+        &:hover {
+          background: #d4effe !important;
+          p {
+            color: black;
+          }
+        }
+        .SignInButton {
+          position: absolute;
+          top: 0px;
+          right: auto;
+          width: 100%;
+          opacity: 0;
+          button {
+            width: 100%;
+            height: 47px;
+          }
+        }
+      }
+    }
+    /* Or */
+    .Or {
+      p {
+        color: var(--orange-text-color);
+      }
+    }
+    /* forget_remember */
+    .forget_remember {
+      display: flex;
+      position: relative;
+      z-index: 0;
+      justify-content: space-between;
+      align-content: center;
+      a {
+        color: #f4a71d !important;
+      }
+    }
+  }
+  /* logo_box */
+  .logo_box {
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+    /* logo */
+    .logo {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      right: auto;
+      color: white;
+      z-index: 2;
+    }
+
+    /* logo_box_img */
+    .logo_box_img {
+      width: 95%;
+      margin-right: 5%;
+      background: url(../../../assets/images/global/icons/global/Carbackground.svg)
+        no-repeat right center;
+      background-size: cover;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    }
+  }
+  /* register */
+  .register {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    width: 100%;
+    p {
+      margin: 0px;
+    }
+    a {
+      color: var(--orange-text-color);
+    }
+  }
+  .vue3-reactive-tel-input {
+    border-radius: 8px !important;
+    padding: 0px 2px;
+    border: 1px solid #dcddeb !important;
+    input {
+      border: 0px !important;
+      direction: ltr;
+    }
+  }
+}
+.simple-input .vti__dropdown .vti__dropdown-list.below {
+  top: -140px !important;
+}
+/*media query */
+
+@media screen and (min-width: 1241px) {
+  .auth-form .main-box .form {
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .auth-form .main-box .ContinueWith {
+    margin-right: 0px;
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1078px) {
+  .auth-form .main-box .ContinueWith {
+    .card {
+      margin: 0px 5px;
+      padding: 8px;
+      p {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .auth-form .main-box {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: -100px;
+    box-shadow: 0px 0px 28px #aaa;
+    padding: 0px;
+    .middle {
+      margin-bottom: 50px;
+      padding: 40px;
+    }
+    .auth_header {
+      p {
+        margin-right: 10px;
+      }
+    }
+    .forget_remember,
+    .register {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      a {
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+    .simple-button.send {
+      margin-bottom: 50px;
+    }
+  }
+  .auth-form .logo_box {
+    .logo_box_img {
+      background: none;
+      img {
+        display: block;
+        // width: 90%;
+        height: 100%;
+      }
+    }
+    .logo {
+      top: 25px;
+    }
+  }
+}
+@media screen and (max-width: 494px) {
+  .auth-form .main-box {
+    padding: 60px 25px 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: -100px;
+    box-shadow: 0px 0px 28px #aaa;
+    margin-bottom: 50px;
+    .middle {
+      padding: 20px;
+    }
+  }
+}
+
+/*ar version */
+.is-ar {
+  .auth-form {
+    .logo_box {
+      .logo {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        left: auto;
+      }
+      .logo_box_img {
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        margin-right: 0px;
+        margin-left: 5%;
+      }
+    }
+    .main-box {
+      .simple-input input,
+      .simple-input select {
+        text-align: right;
+      }
+      .passwordField .pass_icon {
+        right: auto;
+        left: 10px;
+      }
+    }
+  }
+  .text-start,
+  .auth-form .main-box .simple-input input[data-v-2ad4f39d],
+  .auth-form .main-box .simple-input select[data-v-2ad4f39d] {
+    text-align: right !important;
+  }
+  .vue3-reactive-tel-input {
+    input {
+      direction: rtl;
+    }
+  }
+  .auth-form .main-box .ContinueWith {
+    margin-right: auto;
+    margin-left: 50px;
+  }
+  .tab li {
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+}
+
+/*media query is-ar*/
+
+@media screen and (min-width: 1241px) {
+  .is-ar .auth-form .main-box .form {
+    margin-left: 20%;
+    margin-right: 0%;
+  }
+}
