@@ -59,7 +59,7 @@ const showMobile = () => {
         <div>
           <!-- Doctor / login -->
           <SimpleButton type="send">
-            <router-link to="/" class="btn btn-main"
+            <router-link to="/doctor/login" class="btn btn-main"
               ><img src="../../../assets/images/icon.png" />
               Doctor login
             </router-link></SimpleButton
@@ -68,7 +68,7 @@ const showMobile = () => {
         <div class="mx-4">
           <!-- Medical / Login -->
           <SimpleButton type="send">
-            <router-link to="/" class="btn btn-main"
+            <router-link to="/medical/login" class="btn btn-main"
               ><img src="../../../assets/images/icon.png" />
               Medical Login
             </router-link></SimpleButton

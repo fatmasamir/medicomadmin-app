@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "@vue/runtime-core";
 import { useLang } from "@/stores/lang";
-import { useLight } from "@/stores/light";
 import ScrollTop from "./components/global/ScrollTop/index.vue";
 
 //Language

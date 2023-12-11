@@ -3,18 +3,34 @@ import type { RouteRecordRaw } from "vue-router";
 
 //Hompage
 import HomePage from "../views/Homepage/Main.vue";
+//LoginDoctor
+import LoginDoctor from "../views/LoginDoctor/Main.vue";
 
+//LoginMedical
+import LoginMedical from "../views/LoginMedical/Main.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Home",
     component: HomePage,
     beforeEnter(to, from) {
-      if (localStorage.getItem("lang") == "ar") {
-        document.title = ` الصفحه الرئيسيه - Medicom`;
-      } else {
-        document.title = "Home page - Medicom";
-      }
+      document.title = "Home page - Medicom";
+    },
+  },
+  {
+    path: "/doctor/login",
+    name: "LoginDoctor",
+    component: LoginDoctor,
+    beforeEnter(to, from) {
+      document.title = "Login Doctor page - Medicom";
+    },
+  },
+  {
+    path: "/medical/login",
+    name: "LoginMedical",
+    component: LoginMedical,
+    beforeEnter(to, from) {
+      document.title = "Login Medical page - Medicom";
     },
   },
 ];

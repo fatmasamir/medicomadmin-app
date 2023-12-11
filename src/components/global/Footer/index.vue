@@ -311,6 +311,7 @@ Footer {
     display: flex;
     h6 {
       padding: 30px 0px;
+      color: white;
     }
     .policy-menu {
       padding: 20px 0px;
