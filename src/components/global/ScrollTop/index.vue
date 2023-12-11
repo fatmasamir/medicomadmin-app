@@ -42,14 +42,15 @@ onMounted(() => {
       data-aos-offset="100"
       data-aos-duration="100"
     >
-      <span><img src="../../../assets/images/arrow-right-d.png" /></span>
+      <span><img src="../../../assets/images/Top.png" /></span>
     </button>
   </div>
 </template>
 <style scoped lang="scss">
 .onScroll button {
   position: fixed;
-  background: rgba(255, 255, 255, 0.4);
+  background: #10defd;
+  opacity: 0.8 !important;
 
   bottom: 20px;
   right: 20px;
@@ -62,6 +63,9 @@ onMounted(() => {
   img {
     width: 20px;
     height: 30px;
+  }
+  &:hover {
+    opacity: 1 !important;
   }
 }
 </style>
